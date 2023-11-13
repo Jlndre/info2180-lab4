@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",Arial, "Noto Sans", sans-serif;
+    background-color: rgb(253, 253, 253);
+}
+  
+header .container {
+    display: flex;
+    align-items: center;
+    background-color: #c62018;
+    justify-content: center;
+    height: 125px;
+}
+
+.container h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25x;
+}
+
+#searchBtn{
+    background-color: #0035d3;
+    color: white;
+    padding: 10px 20px;
+    height: 45px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #0035d3;
+}
+
+main .container {
+    background-color:#f0f0f0;
+    margin: 10px 100px 10px 100px;
+    height: 150px;
+    height: auto;
+    padding: 20px;
+
+}
+
+#result{
+    margin: 10px;
+    font-size: 20px;
+    padding:5px;
+    color: rgb(42, 83, 197);
+    border-top: 2px rgb(132, 132, 132) solid;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+#userinput{
+    width: 65%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+  
+#resulth{
+    color: rgb(27, 27, 27);
+}

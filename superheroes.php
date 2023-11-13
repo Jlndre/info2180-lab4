@@ -80,6 +80,26 @@ if (empty($hero)):
         <?php endforeach; ?>
     </ul>
     <?php
+else:
+    $search = false;
+
+    // If the input is valid, display the hero's information
+    foreach ($superheroes as $superhero):
+        if ($superhero['alias'] == $hero || $superhero['name'] == $hero):
+            $search = true;
+            ?>
+            <h3><?= $superhero['alias']; ?></h3>
+            <h4>A.K.A <?= $superhero['name']; ?></h4>
+            <p><?= $superhero['biography']; ?></p>
+            <?php
+        endif;
+    endforeach;
+
+    // Print error message if hero is not found
+    if (!$search):
+        ?>
+        <p style="color: #0035d3">Superhero not found</p>
+    <?php endif;
 endif;
 ?>
 
