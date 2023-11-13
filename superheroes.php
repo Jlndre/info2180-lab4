@@ -70,6 +70,8 @@ $hero = filter_input(INPUT_GET, 'query');
 $search = "false";
 
 //check if the input is empty and if it is then displays all the heroes' aliases
+
+
 if (empty($hero)):
     ?>
     <ul>
