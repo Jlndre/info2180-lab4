@@ -1,5 +1,7 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
+
 $superheroes = [
   [
       "id" => 1,
@@ -63,10 +65,34 @@ $superheroes = [
   ], 
 ];
 
+
+$hero = filter_input(INPUT_GET, 'query'); 
+$search = "false";
+
+//check if the input is empty and if it is then displays all the heroes' aliases
+if (empty($hero)):
+    ?>
+    <ul>
+        <?php foreach ($superheroes as $superhero): ?>
+            <li><?= $superhero['alias']; ?></li>
+        <?php endforeach; ?>
+    </ul>
+    <?php
+endif;
 ?>
 
-<ul>
-<?php foreach ($superheroes as $superhero): ?>
-  <li><?= $superhero['alias']; ?></li>
-<?php endforeach; ?>
-</ul>
+
+
+
+
+
+
+        
+   
+
+
+
+
+
+  
+  
